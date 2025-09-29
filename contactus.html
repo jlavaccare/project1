@@ -1,0 +1,168 @@
+<!----1. Set the font to a sans serif google font.
+2. Set the color and size of all H1 and H2 and leave a margin of 30px below them.
+3. Put a border around your list and center it on the page (note:  do NOT center the list items) 
+4. Display your favorite food image in a div using a background image.  Place the explanatory text in a div that is adjacent to it.
+5. Add a background color to alternate lines in the table
+#####6. Create a form to let visitors sign a "guest book" - get the get a user's first and last name, email, city and state. 
+Use a <select> element to choose the state (5-6 states in your area is sufficient). Labels for form elements should be in a <label> tag.  
+Labels should be in their own column and form elements should be in a column to the right of the labels,  All labels should be right aligned.
+7. Add icons for Facebook and Twitter (X) to the page that are in a fixed position of 100px from the top and 35px in from the right corner of the page
+#####8. The site should be responsive down to 600px
+####NOTES from last assignment:
+a) Compress images to under 50kb
+target=_blank in <a> tag to ensure links open in a new tab-->
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+    body,html{font-family:"Lato", "sans-serif"}
+    h1 {font-size:30px; color: #b00502 ; margin:1% 0 1% 0}
+    h2 {font-size:20px; color: #000000 ; margin:1% 0 1% 0}
+
+    .textf{
+        margin-left: 1%;
+        margin-bottom: 0.5%;
+        font-size: 18px;
+    }
+
+    .selector{
+        margin-left: 1%;
+        font-family:"Lato", "sans-serif";
+    }
+
+    .lbl{
+       float: left;
+       width: 10%;
+       text-align: right;
+       overflow:scroll;
+    }
+
+    .about{
+       font-family:"Lato", "sans-serif";
+       float: left;
+       margin-top: 1%;
+       margin-left: 1%;
+       text-align: left;
+    }
+
+    .button{
+        margin-left: 3%;
+        font-family:"Lato", "sans-serif";
+    }
+    
+    .footerdiv{
+        width:100%;
+        background-color:#c6c6c6;
+    }
+
+    .footertxt{
+        font-size:10px;
+        margin-left:3%;
+        margin-top:3%;
+        margin-bottom:3%;
+                padding-top:0.5%;
+        padding-bottom:0.5%;
+        text-align:center;
+    }
+
+    .navbar{
+        width: 100%;
+        background-color: #c7c6c6;
+        overflow: hidden;
+    }
+
+    .navbar h1{
+        float:left;
+        text-align:left;
+        padding-left: 1%;
+    }
+
+    .navbar ul{
+        border:none;
+        padding:0;
+        margin:0;
+    }
+
+    .navbar li {
+    display:block;
+    float: right;
+    text-align: center;
+    padding: 1% 1%;
+    font-size: 18px;
+    list-style-type:none;
+    }
+
+    .navbar li:not(.activea){
+    color: #0c41ec;
+    }
+
+    .navbar a:hover:not(.active) {
+    background-color: #eeeeee;
+    color: #b00502;
+    }
+
+    .navbar li.activea {
+    color:#000000;
+    }
+
+
+
+	</style>
+</head>
+<body>
+    <div class="navbar">
+<ul>
+<h1><b>The Walking Freds</b></h1>
+<li > <a  href="home.html">Home</a></li>
+<li class="activea"> <a class="active" href="contactus.html">CONTACT US!</a></li>
+<li> <a href="setlists.html">Setlist</a></li>
+<li> <a  href="testimonials.html">Testimonials</a></li>
+<li> <a  href="about.html">About</a></li>
+</ul>
+</div>
+    <h2 style="margin-top:3%">Contact Us!</h2>
+    <p>Want to have the Freds play at <i>YOUR</i> wedding, party, or get-together? AWESOME!! Just contact us using the form below:</p>
+    <div class="form">
+                            <form action="/action_page.php" class ="guestbook">
+                                <label class = "lbl" for="fname">First</label>
+                                <input type="text" class = "textf" id="fname" name="firstname" placeholder="First Name">
+                                <br />
+                                <label class = "lbl" for="lname">Last</label>
+                                <input type="text" class = "textf" id="lname" name="lastname" placeholder="Last Name">
+                                <br />
+                                <label class = "lbl" for="email">Email</label>
+                                <input type="text" class = "textf" id="email" name="email" placeholder="email@email.com">
+                                <br />
+                                <label class = "lbl" for="phone">Cell</label>
+                                <input type="text" class = "textf" id="phone" name="phone" placeholder="(617) 867-5309">
+                                <br />
+                                <label class = "lbl" for="city">City</label>
+                                <input type="text" class = "textf" id="city" name="city" placeholder="Anytown">
+                                <br />
+                                <label class = "lbl" for="state">State</label>
+                                <select class="selector" id="state" name="state">
+                                    <option value="ma">Massachusetts</option>
+                                    <option value="ri">Rhode Island</option>
+                                    <option value="nh">New Hampshire</option>
+                                    <option value="me">Maine</option>
+                                    <option value="ot">Other</option>
+                                </select>
+                                <br />
+                                <textarea class = "about" rows = 4 cols = 34 placeholder="Describe your event here"></textarea>
+                                <br />
+                                <br />
+        <input class = "button" type = "button" value = "Submit">
+    </div>
+
+
+<div class="footerdiv">
+<footer>
+    <p class="footertxt"><i>Saw us "Burn Down the House" and wanna buy us an excellent cup of coffee? EXCELLENT! We're on <a href="www.venmo.com">Venmo</a> and <a href="www.cashapp.com">CashApp</a>.</i></p>
+</footer>
+</div>
+</body>
+</html>
+
+
+

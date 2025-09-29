@@ -1,0 +1,176 @@
+<!----1. Set the font to a sans serif google font.
+2. Set the color and size of all H1 and H2 and leave a margin of 30px below them.
+3. Put a border around your list and center it on the page (note:  do NOT center the list items) 
+4. Display your favorite food image in a div using a background image.  Place the explanatory text in a div that is adjacent to it.
+5. Add a background color to alternate lines in the table
+#####6. Create a form to let visitors sign a "guest book" - get the get a user's first and last name, email, city and state. 
+Use a <select> element to choose the state (5-6 states in your area is sufficient). Labels for form elements should be in a <label> tag.  
+Labels should be in their own column and form elements should be in a column to the right of the labels,  All labels should be right aligned.
+7. Add icons for Facebook and Twitter (X) to the page that are in a fixed position of 100px from the top and 35px in from the right corner of the page
+#####8. The site should be responsive down to 600px
+####NOTES from last assignment:
+a) Compress images to under 50kb
+target=_blank in <a> tag to ensure links open in a new tab-->
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+    body,html{font-family:"Lato", "sans-serif"}
+    h1 {font-size:30px; color: #b00502 ; margin:1% 0 1% 0}
+    h2 {font-size:20px; color: #000000 ; margin:1% 0 1% 0}
+    .list{text-align:center}
+    .pt_img{
+        float:left;
+     width: 40%;
+     height: 40%;
+     margin-right:4%;
+     background-image: url('images/padthai.jpg');
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: left;
+    }
+    .setlist_link{
+        text-align: right;
+    }
+    .pt_txt{
+        text-align: right;
+    }
+
+    ul {text-align: left}
+
+    .tablediv{
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .textf{
+        margin-left: 1%;
+        margin-bottom: 0.5%;
+        font-size: 18px;
+    }
+
+    .selector{
+        margin-left: 1%
+    }
+
+    .lbl{
+       float: left;
+       width: 10%;
+       text-align: right;
+    }
+
+    .navbar{
+        width: 100%;
+        background-color: #c7c6c6;
+        overflow: hidden;
+    }
+
+    .navbar h1{
+        float:left;
+        text-align:left;
+        padding-left: 1%;
+    }
+
+    .navbar ul{
+        border:none;
+        padding:0;
+        margin:0;
+    }
+
+    .navbar li {
+    display:block;
+    float: right;
+    text-align: center;
+    padding: 1% 1%;
+    font-size: 18px;
+    list-style-type:none;
+    }
+
+    .navbar li:not(.activea){
+    color: #0c41ec;
+    }
+
+    .navbar a:hover:not(.active) {
+    background-color: #eeeeee;
+    color: #b00502;
+    }
+
+    .navbar li.activea {
+    color:#000000;
+    }
+
+    .footerdiv{
+            width:100%;
+            background-color:#c6c6c6;
+    }
+
+    .footertxt{
+            font-size:10px;
+            margin-left:3%;
+            margin-top:3%;
+            margin-bottom:3%;
+                    padding-top:0.5%;
+        padding-bottom:0.5%;
+            text-align:center;
+    }
+	</style>
+</head>
+<body>
+<div class="navbar">
+<ul>
+<h1><b>The Walking Freds</b></h1>
+<li class="activea"> <a class="active" href="home.html">Home</a></li>
+<li> <a href="contactus.html">CONTACT US!</a></li>
+<li> <a href="setlists.html">Setlist</a></li>
+<li> <a  href="testimonials.html">Testimonials</a></li>
+<li> <a  href="about.html">About</a></li>
+</ul>
+</div>
+<!---<a href="https://www.whatsapp.com"; target = _blank><img class = "fx" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/2062095_application_chat_communication_logo_whatsapp_icon.svg"></a>
+<a href="https://www.youtube.com"; target = _blank><img class = "fx2" src="https://upload.wikimedia.org/wikipedia/commons/5/52/YouTube_social_white_circle_%282017%29.svg"></a>--->
+<h2>Boston's BEST '80s Cover Band!!</h2>
+<img src="media/band.jpg">
+<br />
+<br />
+<a href="">BOOK YOUR EVENT TODAY!!</a>  <!---Insert contact us link - to include instagram and whatsapp channel-->
+<br />
+<h2>Playing the greatest hits of...</h2>
+<div class = "list">
+<ul>
+    <li>Talking Heads</li>
+    <li>Tears For Fears</li>
+    <li>Blondie</li>
+    <li>Duran Duran</li>
+    <li>AND MANY MORE!!</li>
+</ul>
+</div>
+<div name = "setlist_link">
+<a href="">CHECK OUT OUR FULL SETLIST!</a> <!---Insert setlist link-->
+</div>
+<br />
+<h2>BE THE NEXT SATISFIED CUSTOMER!!</h2>
+<p class = "testimonial">The Walking Freds played our wedding. It was a blast! The band has so much energy, and they play all the best hits from the 1980s!
+    My friends were coming up to me afterwards asking how to book them for their events too! <br />
+    <b>Sherry, Age 31, Jamaica Plain</b>
+</p>
+<a href ="">VIEW MORE TESTIMONIALS!</a>
+<br />
+<h2>SEE FOR YOURSELF!</h2>
+<p>Visit our Instagram account to see live footage of Walking Freds rocking the house!</p>
+<a href="https://www.instagram.com", target = _blank><img src = "media/IG.png"; width = 50%></a>
+<!---Embed video here or on other page-->
+<br />
+<a href="">CONTACT US NOW!!</a>  <!---Insert contact us link - to include instagram and whatsapp channel-->
+</body>
+
+<div class="footerdiv">
+<footer>
+    <p class="footertxt"><i>Saw us "Burn Down the House" and wanna buy us an excellent cup of coffee? EXCELLENT! We're on <a href="www.venmo.com">Venmo</a> and <a href="www.cashapp.com">CashApp</a>.</i></p>
+</footer>
+</div>
+
+</html>
+
+
+

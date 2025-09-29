@@ -1,0 +1,160 @@
+<!----1. Set the font to a sans serif google font.
+2. Set the color and size of all H1 and H2 and leave a margin of 30px below them.
+3. Put a border around your list and center it on the page (note:  do NOT center the list items) 
+4. Display your favorite food image in a div using a background image.  Place the explanatory text in a div that is adjacent to it.
+5. Add a background color to alternate lines in the table
+#####6. Create a form to let visitors sign a "guest book" - get the get a user's first and last name, email, city and state. 
+Use a <select> element to choose the state (5-6 states in your area is sufficient). Labels for form elements should be in a <label> tag.  
+Labels should be in their own column and form elements should be in a column to the right of the labels,  All labels should be right aligned.
+7. Add icons for Facebook and Twitter (X) to the page that are in a fixed position of 100px from the top and 35px in from the right corner of the page
+#####8. The site should be responsive down to 600px
+####NOTES from last assignment:
+a) Compress images to under 50kb
+target=_blank in <a> tag to ensure links open in a new tab-->
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+    body,html{font-family:"Lato", "sans-serif"}
+    h1 {font-size:30px; color: #b00502 ; margin:1% 0 1% 0}
+    h2 {font-size:20px; color: #000000 ; margin:1% 0 1% 0}
+
+    .fx{
+      position:fixed;
+      top: 100px;
+      right: 35px; 
+        width: 30px
+    }
+    .fx2{
+      position:fixed;
+      top: 100px;
+      right: 70px; 
+      width: 30px
+    }
+
+    .pt_txt{
+        text-align: right;
+    }
+
+    .ht{background-color: #caebca}
+    ul {border: 1px solid #000000; text-align: left}
+
+    .tablediv{
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .textf{
+        margin-left: 1%;
+        margin-bottom: 0.5%;
+        font-size: 18px;
+    }
+
+    .selector{
+        margin-left: 1%
+    }
+
+    .lbl{
+       float: left;
+       width: 10%;
+       text-align: right;
+    }
+
+    .footerdiv{
+        width:100%;
+        background-color:#c6c6c6;
+    }
+
+    .footertxt{
+        font-size:10px;
+        margin-left:3%;
+        margin-top:3%;
+        margin-bottom:3%;
+                padding-top:0.5%;
+        padding-bottom:0.5%;
+        text-align:center;
+    }
+    
+.navbar{
+        width: 100%;
+        background-color: #c7c6c6;
+        overflow: hidden;
+    }
+
+    .navbar h1{
+        float:left;
+        text-align:left;
+        padding-left: 1%;
+    }
+
+    .navbar ul{
+        border:none;
+        padding:0;
+        margin:0;
+    }
+
+    .navbar li {
+    display:block;
+    float: right;
+    text-align: center;
+    padding: 1% 1%;
+    font-size: 18px;
+    list-style-type:none;
+    }
+
+    .navbar li:not(.activea){
+    color: #0c41ec;
+    }
+
+    .navbar a:hover:not(.active) {
+    background-color: #eeeeee;
+    color: #b00502;
+    }
+
+    .navbar li.activea {
+    color:#000000;
+    }
+
+
+	</style>
+</head>
+<body>
+<div class="navbar">
+<ul>
+<h1><b>The Walking Freds</b></h1>
+<li > <a  href="home.html">Home</a></li>
+<li> <a href="contactus.html">CONTACT US!</a></li>
+<li> <a href="setlists.html">Setlist</a></li>
+<li class="activea"> <a class="active" href="testimonials.html">Testimonials</a></li>
+<li> <a  href="about.html">About</a></li>
+</ul>
+</div>
+<h2>BE THE NEXT SATISFIED CUSTOMER!</h2>
+<p class = "testimonial">The Walking Freds played our wedding. It was a blast! The band has so much energy, and they play all the best hits from the 1980s!
+    My friends were coming up to me afterwards asking how to book them for their events too! <br />
+    <b>Sherry, Age 31, Jamaica Plain</b>
+</p>
+<p class = "testimonial">My boyfriend and I are huge '80s music fans, and we were thrilled to have the Freds play our housewarming party for our first ever home! They were awesome!! <br />
+    <b>Jazmyne, Age 28, Brookline</b>
+</p>
+<p class = "testimonial">I wish someone told us about the Freds before our wedding! But we got to have them play "Making Flippy Floppy" when we renewed our vows, and, honestly, that was even better... <br />
+    <b>Shelly & Telly, Age 36 & 34, Nashua</b>
+</p>
+<p class = "testimonial">I saw the Talking Heads play live at the Garden in '83. The Freds don't sound like them... they sound BETTER! <br />
+    <b>David, Age 66, Medford</b>
+</p>
+<p class = "testimonial">I've booked the Freds four times and am working on a fifth. Honestly, I throw parties just so I can hear them play. They're that good. <br />
+    <b>Billy, Age 42, Providence</b>
+</p>
+<div class="footerdiv">
+<footer>
+    <p class="footertxt"><i>Saw us "Burn Down the House" and wanna buy us an excellent cup of coffee? EXCELLENT! We're on <a href="www.venmo.com">Venmo</a> and <a href="www.cashapp.com">CashApp</a>.</i></p>
+</footer>
+</div>
+</body>
+</html>
+
+
+
+

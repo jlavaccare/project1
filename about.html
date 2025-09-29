@@ -1,0 +1,192 @@
+<!----1. Set the font to a sans serif google font.
+2. Set the color and size of all H1 and H2 and leave a margin of 30px below them.
+3. Put a border around your list and center it on the page (note:  do NOT center the list lis) 
+4. Display your favorite food image in a div using a background image.  Place the explanatory text in a div that is adjacent to it.
+5. Add a background color to alternate lines in the table
+#####6. Create a form to let visitors sign a "guest book" - get the get a user's first and last name, email, city and state. 
+Use a <select> element to choose the state (5-6 states in your area is sufficient). Labels for form elements should be in a <label> tag.  
+Labels should be in their own column and form elements should be in a column to the right of the labels,  All labels should be right aligned.
+7. Add icons for Facebook and Twitter (X) to the page that are in a fixed position of 100px from the top and 35px in from the right corner of the page
+#####8. The site should be responsive down to 600px
+####NOTES from last assignment:
+a) Compress images to under 50kb
+target=_blank in <a> tag to ensure links open in a new tab-->
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+    body,html{font-family:"Lato", "sans-serif"}
+    h1 {font-size:30px; color: #b00502 ; margin:1% 0 1% 0}
+    h2 {font-size:20px; color: #000000 ; margin:1% 0 1% 0}
+    .list{text-align:center}
+    .br_img{
+     height: 40%;
+     background-image: url('media/map.png');
+     background-repeat: no-repeat;
+     background-size: contain;
+     margin-left:1%;
+     margin-bottom:1%;
+    }
+    .fx{
+      position:fixed;
+      top: 100px;
+      right: 35px; 
+        width: 30px
+    }
+    .fx2{
+      position:fixed;
+      top: 100px;
+      right: 70px; 
+      width: 30px
+    }
+
+    .pt_txt{
+        text-align: right;
+    }
+
+    .tablediv{
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .textf{
+        margin-left: 1%;
+        margin-bottom: 0.5%;
+        font-size: 18px;
+    }
+
+    .selector{
+        margin-left: 1%
+    }
+
+    .lbl{
+       float: left;
+       width: 10%;
+       text-align: right;
+    }
+    
+    .fx{
+      position:fixed;
+      top: 100px;
+      right: 35px; 
+        width: 30px
+    }
+    .fx2{
+      position:fixed;
+      top: 100px;
+      right: 70px; 
+      width: 30px
+    }
+    .fx3{
+      position:fixed;
+      top: 100px;
+      right: 105px; 
+      width: 30px
+    }
+
+        .footerdiv{
+        width:100%;
+        background-color:#c6c6c6;
+    }
+
+    .footertxt{
+        font-size:10px;
+        margin-left:3%;
+        margin-top:3%;
+        margin-bottom:3%;
+                padding-top:0.5%;
+        padding-bottom:0.5%;
+        text-align:center;
+    }
+
+    .navbar{
+        width: 100%;
+        background-color: #c7c6c6;
+        overflow: hidden;
+    }
+
+    .navbar h1{
+        float:left;
+        text-align:left;
+        padding-left: 1%;
+    }
+
+    .navbar ul{
+        border:none;
+        padding:0;
+        margin:0;
+    }
+
+    .navbar li {
+    display:block;
+    float: right;
+    text-align: center;
+    padding: 1% 1%;
+    font-size: 18px;
+    list-style-type:none;
+    }
+
+    .navbar li:not(.activea){
+    color: #0c41ec;
+    }
+
+    .navbar a:hover:not(.active) {
+    background-color: #eeeeee;
+    color: #b00502;
+    }
+
+    .navbar li.activea {
+    color:#000000;
+    }
+
+    
+
+	</style>
+</head>
+<body>
+<div class="navbar">
+<ul>
+<h1><b>The Walking Freds</b></h1>
+<li > <a  href="home.html">Home</a></li>
+<li> <a href="contactus.html">CONTACT US!</a></li>
+<li> <a href="setlists.html">Setlist</a></li>
+<li> <a  href="testimonials.html">Testimonials</a></li>
+<li class="activea"> <a class="active" href="about.html">About</a></li>
+</ul>
+</div>
+<h2>About The Freds</h2>
+<p>Much like the Talking Heads, the Freds were founded by four intrepid students at Rhode Island School of Design (all Class of 2007 Alums) back in 2005.
+    Our lead singer, Freddi Arquette, had the idea to give the guys stage names ... "Fred Redd" on guitar, "Fred Orange" on bass and "Fred Greene" on the drums.
+    They were listening to their favorite "RISD" alum band and had the idea ... hey, we can play these songs!!
+    Then they moved to Boston together in the late 2000s, and a campus legend became a city-wide legend.
+    They started just playing Talking Heads songs, but by popular demand expanded into the biggest hits of the 1980s and more... go check out our SETLIST for more.
+    The gang even met David Byrne himself after a 2012 concert.
+    We're celebrating our 20th Anniversary in 2025.
+<h2>Where We Play</h2>
+The Freds are based in Boston and are available to play anywhere within 100 miles of Boston Common (measured "as the crow flies") for no additional fee.
+If you're further than 90 miles away and interested in having the Freds play at your party - you still can!
+We'd say that about 3/4 of our shows are in the Boston-Providence area, but we've played in places like Maine, Syracuse, and even Ottawa and will travel!
+We'll charge an additional "travel fee" according to the following structure:
+<ul>
+    <li><b>101-270 miles from Boston Common:</b> Additional fee of $0.75 per additional mile beyond 100</li>
+    <li><b>More than 270 miles away:</b> Flat $500 travel fee</li>
+    <li><b>If located in Canada:</b> Additional $75 international travel fee, then charged based on proximity to Boston Common</li>
+</ul>
+<p>Here's a map of everywhere we've played just in the past few years. 
+<div class="br_img"></div>
+Add your town to the list!!</p>
+
+<br />
+
+<div class="footerdiv">
+<footer>
+    <p class="footertxt"><i>Saw us "Burn Down the House" and wanna buy us an excellent cup of coffee? EXCELLENT! We're on <a href="www.venmo.com">Venmo</a> and <a href="www.cashapp.com">CashApp</a>.</i></p>
+</footer>
+</div>
+
+</body>
+</html>
+
+
+
